@@ -1,0 +1,151 @@
+.footer {
+    background-color: #2f303a;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-logo {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.logo-part-footer {
+    color: $main-background-color;
+}
+
+.address .link {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $address-link-color;
+    transition: color $typical-timing-duration $typical-timing-function;
+
+    &:hover,
+    &:focus {
+            color: $accent-color;
+        }
+}
+
+.address-content:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.address .address-item {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $main-background-color;
+}
+
+.flex-footer {
+    display: flex;
+    align-items: baseline;
+}
+
+.flex-address {
+    margin-right: 70px;
+}
+
+.connect-title {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $main-background-color;
+    margin-bottom: 20px;
+}
+
+.connect-list {
+    display: flex;
+}
+
+.connect-list-item+.connect-list-item {
+    margin-left: 10px;
+}
+
+.connect-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    justify-content: center;
+    align-items: center;
+    fill: $main-background-color;
+    transition: background-color $typical-timing-duration $typical-timing-function;
+
+    &:hover,
+    &:focus {
+            background-color: $accent-color;
+        }
+}
+
+.footer-form {
+    margin-left: auto;
+}
+
+.footer-form-title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $main-background-color;
+}
+
+.footer-form-wrap {
+    display: flex;
+}
+
+.footer-form-input {
+    height: 50px;
+    width: 358px;
+    margin-right: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.6);
+    padding-left: 16px;
+    
+    &::placeholder {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+.footer-form-btn {
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 28px;
+    width: 200px;
+    height: 50px;
+    background: $accent-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: $main-background-color;
+    border-color: transparent;
+    cursor: pointer;
+    text-align: center;
+    fill: #ffffff;
+}
+
+.footer-form-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(50%) translateX(-24px);
+}

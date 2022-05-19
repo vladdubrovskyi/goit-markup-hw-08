@@ -1,0 +1,114 @@
+.header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border: 1px solid #ececec;
+
+    &-flex {
+            display: flex;
+            align-items: center;
+        }
+}
+
+.site-nav {
+    display: flex;
+    align-items: center;
+
+&__logo {
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: $accent-color;
+    margin-right: 93px;
+}
+
+&__logo-part {
+    color: $main-color;
+}
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+
+
+&__item {
+    margin-right: 50px;
+}
+}
+
+.navigation__item:last-child {
+    margin-right: 0;
+}
+
+.navigation__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $main-color;
+    transition: color $typical-timing-duration $typical-timing-function;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    &:hover {
+        color: $accent-color;
+    }
+    
+   &:focus {
+        color: $accent-color;
+    }
+}
+
+.navigation__link.current {
+    position: relative;
+    color: $accent-color;
+
+   &::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 4px;
+            background-color: $accent-color;
+            border-radius: 2px;
+            position: absolute;
+            bottom: 0%;
+            left: 0;
+        }
+}
+
+.contacts {
+    display: flex;
+    margin-left: auto;
+
+    &__item {
+            margin-right: 50px;
+        }
+    &__icon {
+            fill: currentColor;
+            margin-right: 11px;
+        }
+}
+
+.contacts__item:last-child {
+    margin-right: 0;
+}
+
+.contacts__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $text-content-color;
+    display: flex;
+    align-items: center;
+    transition: color $typical-timing-duration $typical-timing-function;
+
+    &:hover {
+            color: $accent-color;
+        }
+    &:focus {
+            color: $accent-color;
+        }
+}
