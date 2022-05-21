@@ -1,12 +1,43 @@
 .advantages {
-    padding-top: $typical-padding;
-
-    &__list {
-        display: flex;
+    padding-top: 60px;
+    @media screen and (min-width: 1200px) {
+        padding-top: $typical-padding;
     }
 
+    
+    &__list {
+        
+        @media screen and (min-width: 768px) and (max-width:1199px){
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: -30px;
+            margin-top: -30px;
+        }
+        
+        @media screen and (min-width: 1200px) {
+            display: flex;
+        }
+    }
     &__item {
-        max-width: 270px;
+        
+        max-width: 450px;
+        @media screen and (max-width: 767px) {
+            &+& {
+        margin-top: 30px;
+        }
+        
+        }
+          @media screen and (min-width: 768px) and (max-width:1199px) {
+            margin-left: 30px;
+            margin-top: 30px;
+            flex-basis: calc(100% / 2 - 30px);
+          }
+        @media screen and (min-width: 1200px) {
+                     max-width: 270px;
+                    &+& {
+                            margin-left: 30px;
+                        }
+                 }
     }
     
     &__thumb {
@@ -15,9 +46,16 @@
             margin-bottom: 30px;
             background-color: #f5f4fa;
             border-radius: 4px;
-            width: 270px;
+            max-width: 450px;
             height: 120px;
             align-items: center;
+            @media screen and (min-width: 768px) {
+                max-width: 354px;
+            }
+         @media screen and (min-width: 1200px) {
+             max-width: 270px;
+         }
+
         }
     
     &__title {
@@ -26,19 +64,20 @@
             letter-spacing: 0.03em;
             text-transform: uppercase;
             margin-bottom: 10px;
-        }
+            text-align: center;
+            }
+        
     
     &__text {
             font-size: 14px;
             line-height: 1.71;
             letter-spacing: 0.03em;
-            color: var(--text-content-color);
+            color: $text-content-color;
         }
-}
+    
+    }
 
 
 
-.advantages__item+.advantages__item {
-    margin-left: 30px;
-}
+
 
