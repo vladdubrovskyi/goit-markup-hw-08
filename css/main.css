@@ -273,6 +273,7 @@ img {
 
 .advantages {
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .advantages {
@@ -354,6 +355,11 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+@media screen and (max-width: 1199px) {
+  .activity {
+    display: none;
+  }
+}
 .activity__main-title {
   margin-bottom: 50px;
   font-size: 36px;
@@ -387,31 +393,75 @@ img {
 
 .team {
   background-color: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .team__main-title {
-  margin-bottom: 50px;
-  font-size: 36px;
+  margin-bottom: 30px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
 }
-.team__list {
-  display: flex;
-  margin-left: -30px;
+@media screen and (min-width: 1200px) {
+  .team__main-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__list {
+    display: flex;
+  }
 }
 .team__item {
   background-color: #ffffff;
-  flex-basis: calc((100% - 120px) / 4);
-  margin-left: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  width: 270px;
+  max-width: 450px;
+}
+@media screen and (max-width: 767px) {
+  .team__item + .team__item {
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team__item {
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc(50% - 30px);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__item {
+    width: 270px;
+  }
+  .team__item + .team__item {
+    margin-left: 30px;
+  }
 }
 .team__content {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 16px;
+}
+@media screen and (min-width: 1200px) {
+  .team__content {
+    padding-bottom: 30px;
+  }
 }
 .team__title {
   font-weight: 500;
@@ -432,7 +482,12 @@ img {
 .soc-list {
   display: flex;
   justify-content: center;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
+}
+@media screen and (min-width: 1200px) {
+  .soc-list {
+    padding-bottom: 30px;
+  }
 }
 
 .soc-list__item + .soc-list__item {
@@ -443,7 +498,6 @@ img {
   display: flex;
   width: 44px;
   height: 44px;
-  display: flex;
   justify-content: center;
   align-items: center;
   fill: #afb1b8;
