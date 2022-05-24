@@ -93,15 +93,34 @@ img {
   padding-top: 16px;
   padding-bottom: 16px;
 }
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 21px;
+    padding-bottom: 21px;
+    border: 1px solid #ececec;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+}
 .header-flex {
   display: flex;
   align-items: center;
 }
 
 .short-menu {
+  max-width: 768px;
   display: flex;
   width: 100%;
   align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .short-menu {
+    display: none;
+  }
 }
 .short-menu__logo {
   font-family: "Raleway";
@@ -143,6 +162,11 @@ img {
   overflow: auto;
   padding-top: 48px;
   padding-bottom: 48px;
+}
+@media screen and (min-width: 768px) {
+  .mob-menu {
+    display: none;
+  }
 }
 .mob-menu .container {
   display: flex;
@@ -252,6 +276,12 @@ img {
   color: #2196f3;
   margin-right: 93px;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .site-nav__logo {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+}
 .site-nav__logo-part {
   color: #212121;
 }
@@ -297,8 +327,13 @@ img {
   background-color: #2196f3;
   border-radius: 2px;
   position: absolute;
-  bottom: 0%;
+  bottom: 0;
   left: 0;
+}
+@media screen and (min-width: 768px) {
+  .navigation__link.current::after {
+    bottom: -2px;
+  }
 }
 
 .contacts {
@@ -310,8 +345,21 @@ img {
     display: none;
   }
 }
-.contacts__item {
-  margin-right: 50px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts {
+    display: block;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__item {
+    margin-right: 50px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 .contacts__icon {
   fill: currentColor;
@@ -744,9 +792,31 @@ img {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-thumb {
+    display: flex;
+    align-items: baseline;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-thumb {
+    justify-content: space-around;
+    margin-bottom: 60px;
+  }
+}
+
 .footer-logo {
+  font-size: 24px;
+  line-height: 1.17;
   display: block;
   margin-bottom: 20px;
+  margin-right: 0;
+}
+@media screen and (min-width: 1200px) {
+  .footer-logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .logo-part-footer {
@@ -766,7 +836,12 @@ img {
 }
 
 .address-content:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+}
+@media screen and (min-width: 1200px) {
+  .address-content:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 .address .address-item {
@@ -777,13 +852,39 @@ img {
   color: #ffffff;
 }
 
-.flex-footer {
-  display: flex;
-  align-items: baseline;
+@media screen and (min-width: 1200px) {
+  .flex-footer {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
-.flex-address {
-  margin-right: 70px;
+@media screen and (max-width: 1199px) {
+  .flex-address {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .flex-address {
+    margin-right: 70px;
+  }
+}
+
+.connect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (max-width: 1199px) {
+  .connect {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .connect {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
 }
 
 .connect-title {
@@ -818,8 +919,21 @@ img {
   background-color: #2196f3;
 }
 
-.footer-form {
-  margin-left: auto;
+@media screen and (max-width: 1199px) {
+  .footer-form {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-form {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    margin-left: auto;
+  }
 }
 
 .footer-form-title {
@@ -832,19 +946,34 @@ img {
   color: #ffffff;
 }
 
-.footer-form-wrap {
-  display: flex;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-form-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .footer-form-input {
   height: 50px;
-  width: 358px;
-  margin-right: 12px;
+  width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: transparent;
   color: rgba(255, 255, 255, 0.6);
   padding-left: 16px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .footer-form-input {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-form-input {
+    width: 358px;
+    margin-right: 12px;
+  }
 }
 .footer-form-input::placeholder {
   font-family: "Roboto";

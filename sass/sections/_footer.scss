@@ -3,10 +3,27 @@
     padding-top: 60px;
     padding-bottom: 60px;
 }
+.footer-thumb {
+    @media screen and (min-width:768px){
+        display: flex;
+        align-items: baseline;
+    }
+    @media screen and (min-width:768px) and (max-width:1199px){
+    justify-content: space-around;
+    margin-bottom: 60px;
+    }
+}
 
 .footer-logo {
+    font-size: 24px;
+    line-height: 1.17;
     display: block;
     margin-bottom: 20px;
+    margin-right: 0;
+    @media screen and (min-width:1200px){
+        font-size: 26px;
+        line-height: 1.19;
+    }
 }
 
 .logo-part-footer {
@@ -28,7 +45,12 @@
 }
 
 .address-content:not(:last-child) {
-    margin-bottom: 9px;
+    
+    margin-bottom: 8px;
+    @media screen and (min-width:1200px){
+        margin-bottom: 9px;
+    }
+
 }
 
 .address .address-item {
@@ -40,14 +62,35 @@
 }
 
 .flex-footer {
+@media screen and (min-width:1200px){
     display: flex;
     align-items: baseline;
+}  
 }
 
 .flex-address {
-    margin-right: 70px;
+    @media screen and (max-width:1199px){
+    text-align: center;
+    }
+    @media screen and (min-width:1200px) {
+        margin-right: 70px;
+    }
 }
 
+
+.connect {
+    @media screen and (max-width:1199px) {
+        text-align: center;
+    }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media screen and (max-width:767px){
+            margin-top: 60px;
+            margin-bottom: 60px;
+        }
+        
+}
 .connect-title {
     font-size: 14px;
     line-height: 1.14;
@@ -83,7 +126,19 @@
 }
 
 .footer-form {
-    margin-left: auto;
+    @media screen and (max-width:1199px) {
+        text-align: center;
+    }
+    @media screen and (min-width:768px) and (max-width:1199px){
+        
+    }
+    @media screen and (min-width:768px){
+        display: flex;  
+        flex-direction: column
+    }
+    @media screen and (min-width:1200px){
+        margin-left: auto;
+    }
 }
 
 .footer-form-title {
@@ -97,18 +152,29 @@
 }
 
 .footer-form-wrap {
-    display: flex;
+@media screen and (min-width:768px) and (max-width:1199px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .footer-form-input {
     height: 50px;
-    width: 358px;
-    margin-right: 12px;
+    width: 100%;
+    @media screen and (min-width:768px){
+        width: 450px; 
+    }
+    @media screen and (min-width:1200px) {
+        width: 358px;
+        margin-right: 12px;
+    }
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     background-color: transparent;
     color: rgba(255, 255, 255, 0.6);
     padding-left: 16px;
+    margin-bottom: 20px;
     
     &::placeholder {
         font-family: "Roboto";

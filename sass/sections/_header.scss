@@ -1,9 +1,18 @@
 .header {
-    // padding-top: 24px;
-    // // padding-bottom: 25px;
-    // border: 1px solid #ececec;\
     padding-top: 16px;
     padding-bottom: 16px;
+    @media screen and (min-width: 768px){
+        padding-top: 21px;
+        padding-bottom: 21px;
+        border: 1px solid #ececec;        
+    }
+    @media screen and (min-width: 1200px){
+        padding-top: 24px;
+        padding-bottom: 25px;
+    }
+   
+   
+   
 
     &-flex {
             display: flex;
@@ -12,6 +21,9 @@
 }
 
 .short-menu {
+@media screen and (min-width: 768px) {
+    display: none};
+max-width: 768px;
 display: flex;
 width: 100%;
 align-items: center;
@@ -51,6 +63,9 @@ align-items: center;
 }
 
 .mob-menu {
+    @media screen and (min-width: 768px) {
+            display: none;
+        }
     position: fixed;
     top: 0;
     left: 0;
@@ -162,15 +177,6 @@ align-items: center;
  }
 
 
-
-
-
-
-
-
-
-
-
 .site-nav {
     @media screen and (max-width:767px){
         display: none;
@@ -186,6 +192,10 @@ align-items: center;
     letter-spacing: 0.03em;
     color: $accent-color;
     margin-right: 93px;
+    @media screen and (min-width:768px) and (max-width:1199px){
+        font-size: 24px;
+        line-height: 1.17;
+    }
 }
 
 &__logo-part {
@@ -238,8 +248,11 @@ align-items: center;
             background-color: $accent-color;
             border-radius: 2px;
             position: absolute;
-            bottom: 0%;
+            bottom: 0;
             left: 0;
+            @media screen and (min-width:768px){
+                bottom: -2px;
+            }
         }
 }
 
@@ -247,12 +260,23 @@ align-items: center;
     @media screen and (max-width:767px) {
             display: none;
         }
+    @media screen and (min-width:768px) and (max-width:1199px){
+        display: block;
+        margin-left: auto;
+    }
     display: flex;
     margin-left: auto;
 
     &__item {
+        @media screen and (min-width:1200px){
             margin-right: 50px;
         }
+        &:not(:last-child){
+            @media screen and (min-width:768px) and (max-width:1199px) {
+            margin-bottom: 10px;}
+        }
+    }
+    
     &__icon {
             fill: currentColor;
             margin-right: 11px;
