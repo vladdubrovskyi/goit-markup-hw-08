@@ -387,6 +387,7 @@ img {
 
 .mob-soc {
   display: flex;
+  max-width: 450px;
 }
 .mob-soc__item + .mob-soc__item {
   margin-left: 20px;

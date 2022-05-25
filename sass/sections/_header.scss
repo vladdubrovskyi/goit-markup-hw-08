@@ -155,9 +155,7 @@ align-items: center;
 
 .mob-soc {
     display: flex;
-    
-
-
+    max-width: 450px;
     &__item + &__item {
         margin-left: 20px;
     }
@@ -183,8 +181,7 @@ align-items: center;
      width: 1px;
      background-color: rgba(33, 33, 33, 0.2);
      top: 0;
-     left: -10px;
- }
+     left: -10px;}
 
 
 .site-nav {
