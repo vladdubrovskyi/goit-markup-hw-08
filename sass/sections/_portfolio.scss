@@ -1,21 +1,50 @@
 .portfolio {
-    padding-top: $typical-padding;
-    padding-bottom: $typical-padding;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width:1200px) {
+        padding-top: $typical-padding;
+        padding-bottom: $typical-padding;
+    }
+
 }
 
 .portfolio-navigation {
     display: flex;
-    margin-right: -8px;
-    margin-bottom: 50px;
-    justify-content: center;
+    flex-wrap: wrap;
+    // margin-right: -8px;
+   
+    margin-bottom: 40px;
+    @media screen and (min-width:768px){
+        margin-bottom: 30px;
+        justify-content: center;
+    }
+    @media screen and (min-width:1200px){
+        margin-bottom: 50px;
+    }
+    
 }
+
+.portfolio-navigation-item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.portfolio-navigation-item:nth-child(-n + 3){
+    @media screen and (max-width:767px){
+        margin-bottom: 15px;
+    }
+    
+}
+
+// .portfolio-navigation-item+.portfolio-navigation-item {
+//     margin-right: 8px;
+// }
 
 .portfolio-navigation-item .button {
     padding-top: 6px;
     padding-bottom: 6px;
     padding-right: 22px;
     padding-left: 22px;
-    flex-basis: calc((100% - 40px) / 5);
+    // flex-basis: calc((100% - 40px) / 5);
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -40,21 +69,34 @@
     }
     }
 
-.portfolio-navigation-item+.portfolio-navigation-item {
-    margin-left: 8px;
-}
+
 
 .portfolio-list {
+@media screen and (min-width:768px){
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
     margin-top: -30px;
+} 
 }
 
+
+.portfolio-list-item:not(:last-child){
+    @media screen and (max-width:1199px){
+        margin-bottom: 30px;
+    }
+    
+}
 .portfolio-list-item {
-    margin-left: 30px;
-    margin-top: 30px;
-    flex-basis: calc(100% / 3 - 30px);
+    @media screen and (min-width:768px){
+        margin-left: 30px;
+        margin-top: 30px;
+        flex-basis: calc(100% / 2 - 30px);
+    }
+    @media screen and (min-width:1200px){
+        flex-basis: calc(100% / 3 - 30px);
+    }
+    
 }
 
 .portfolio-list-link {
@@ -77,11 +119,20 @@
     position: absolute;
     font-weight: 400;
     font-size: 18px;
-    line-height: 28px;
+    line-height: 1.55 ;
     letter-spacing: 0.03em;
     bottom: 0;
-    padding-top: 63px;
-    padding-bottom: 63px;
+    padding-top: 74px;
+    padding-bottom: 74px;
+    @media screen and (min-width:768px) {
+        padding-top: 49px;
+        padding-bottom: 77px;    
+    }
+    @media screen and (min-width:1200px){
+        padding-top: 63px;
+        padding-bottom: 63px;
+    }
+    
     padding-left: 24px;
     padding-right: 24px;
     color: $main-background-color;
