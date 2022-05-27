@@ -251,6 +251,8 @@ img {
 
 .mob-soc {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   max-width: 450px;
 }
 .mob-soc__item + .mob-soc__item {

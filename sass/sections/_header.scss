@@ -161,6 +161,8 @@ align-items: center;
 
 .mob-soc {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     max-width: 450px;
     &__item + &__item {
         margin-left: 20px;
