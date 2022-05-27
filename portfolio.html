@@ -76,12 +76,14 @@
             </button>
             <ul class="mob-navigation list">
               <li class="mob-navigation__item">
-                <a href="./index.html" class="mob-navigation__link link current"
+                <a href="./index.html" class="mob-navigation__link link"
                   >Студия</a
                 >
               </li>
               <li class="mob-navigation__item">
-                <a href="./portfolio.html" class="mob-navigation__link link"
+                <a
+                  href="./portfolio.html"
+                  class="mob-navigation__link link current"
                   >Портфолио</a
                 >
               </li>
@@ -147,15 +149,30 @@
             <li class="portfolio-list-item">
               <a href="" class="portfolio-list-link link">
                 <div class="portfolio-popup">
-                  <img
-                    srcset="
-                      ./images/portfolio1.jpg    1x,
-                      ./images/portfolio1@2x.jpg 2x
-                    "
-                    src="./images/portfolio1.jpg"
-                    alt="Образец сайта"
-                    width="450"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio1desk.jpg    1x,
+                        ./images/portfolio1desk@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio1tab.jpg    1x,
+                        ./images/portfolio1tab@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio1.jpg    1x,
+                        ./images/portfolio1@2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img src="./images/portfolio1.jpg" alt="Образец сайта" />
+                  </picture>
 
                   <p class="portfolio-popup-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -173,15 +190,30 @@
             <li class="portfolio-list-item">
               <a href="" class="portfolio-list-link link">
                 <div class="portfolio-popup">
-                  <img
-                    srcset="
-                      ./images/portfolio2.jpg    1x,
-                      ./images/portfolio2@2x.jpg 2x
-                    "
-                    src="./images/portfolio2.jpg"
-                    alt="Два баскетболиста"
-                    width="450"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio2desk.jpg    1x,
+                        ./images/portfolio2desk@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio2tab.jpg    1x,
+                        ./images/portfolio2tab@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio2.jpg    1x,
+                        ./images/portfolio2@2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img src="./images/portfolio2.jpg" alt="Образец сайта" />
+                  </picture>
                   <p class="portfolio-popup-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -200,15 +232,30 @@
             <li class="portfolio-list-item">
               <a href="" class="portfolio-list-link link">
                 <div class="portfolio-popup">
-                  <img
-                    srcset="
-                      ./images/portfolio3.jpg    1x,
-                      ./images/portfolio3@2x.jpg 2x
-                    "
-                    src="./images/portfolio3.jpg"
-                    alt="Логотип ресторана"
-                    width="450"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio3desk.jpg    1x,
+                        ./images/portfolio3desk@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio3tab.jpg    1x,
+                        ./images/portfolio3tab@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio3.jpg    1x,
+                        ./images/portfolio3@2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img src="./images/portfolio3.jpg" alt="Образец сайта" />
+                  </picture>
                   <p class="portfolio-popup-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -227,15 +274,30 @@
             <li class="portfolio-list-item">
               <a href="" class="portfolio-list-link link">
                 <div class="portfolio-popup">
-                  <img
-                    srcset="
-                      ./images/portfolio4.jpg    1x,
-                      ./images/portfolio4@2x.jpg 2x
-                    "
-                    src="./images/portfolio4.jpg"
-                    alt="Наушники"
-                    width="450"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio4desk.jpg    1x,
+                        ./images/portfolio4desk@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio4tab.jpg    1x,
+                        ./images/portfolio4tab@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio4.jpg    1x,
+                        ./images/portfolio4@2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img src="./images/portfolio4.jpg" alt="Образец сайта" />
+                  </picture>
                   <p class="portfolio-popup-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -254,15 +316,30 @@
             <li class="portfolio-list-item">
               <a href="" class="portfolio-list-link link">
                 <div class="portfolio-popup">
-                  <img
-                    srcset="
-                      ./images/portfolio5.jpg    1x,
-                      ./images/portfolio5@2x.jpg 2x
-                    "
-                    src="./images/portfolio5.jpg"
-                    alt="Две коробки"
-                    width="450"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio5desk.jpg    1x,
+                        ./images/portfolio5desk@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio5tab.jpg    1x,
+                        ./images/portfolio5tab@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio5.jpg    1x,
+                        ./images/portfolio5@2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img src="./images/portfolio5.jpg" alt="Образец сайта" />
+                  </picture>
                   <p class="portfolio-popup-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -281,15 +358,30 @@
             <li class="portfolio-list-item">
               <a href="" class="portfolio-list-link link">
                 <div class="portfolio-popup">
-                  <img
-                    srcset="
-                      ./images/portfolio6.jpg    1x,
-                      ./images/portfolio6@2x.jpg 2x
-                    "
-                    src="./images/portfolio6.jpg"
-                    alt="Мак-компьютер"
-                    width="450"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio6desk.jpg    1x,
+                        ./images/portfolio6desk@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio6tab.jpg    1x,
+                        ./images/portfolio6tab@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio6.jpg    1x,
+                        ./images/portfolio6@2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img src="./images/portfolio6.jpg" alt="Образец сайта" />
+                  </picture>
                   <p class="portfolio-popup-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -308,15 +400,30 @@
             <li class="portfolio-list-item">
               <a href="" class="portfolio-list-link link">
                 <div class="portfolio-popup">
-                  <img
-                    srcset="
-                      ./images/portfolio7.jpg    1x,
-                      ./images/portfolio7@2x.jpg 2x
-                    "
-                    src="./images/portfolio7.jpg"
-                    alt="Журнал"
-                    width="450"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio7desk.jpg    1x,
+                        ./images/portfolio7desk@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio7tab.jpg    1x,
+                        ./images/portfolio7tab@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio7.jpg    1x,
+                        ./images/portfolio7@2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img src="./images/portfolio7.jpg" alt="Образец сайта" />
+                  </picture>
                   <p class="portfolio-popup-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -335,15 +442,30 @@
             <li class="portfolio-list-item">
               <a href="" class="portfolio-list-link link">
                 <div class="portfolio-popup">
-                  <img
-                    srcset="
-                      ./images/portfolio8.jpg    1x,
-                      ./images/portfolio8@2x.jpg 2x
-                    "
-                    src="./images/portfolio8.jpg"
-                    alt="Бирка"
-                    width="450"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio8desk.jpg    1x,
+                        ./images/portfolio8desk@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio8tab.jpg    1x,
+                        ./images/portfolio8tab@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio8.jpg    1x,
+                        ./images/portfolio8@2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img src="./images/portfolio8.jpg" alt="Образец сайта" />
+                  </picture>
                   <p class="portfolio-popup-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -362,15 +484,30 @@
             <li class="portfolio-list-item">
               <a href="" class="portfolio-list-link link">
                 <div class="portfolio-popup">
-                  <img
-                    srcset="
-                      ./images/portfolio9.jpg    1x,
-                      ./images/portfolio9@2x.jpg 2x
-                    "
-                    src="./images/portfolio9.jpg"
-                    alt="Ноутбук"
-                    width="450"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio9desk.jpg    1x,
+                        ./images/portfolio9desk@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio9tab.jpg    1x,
+                        ./images/portfolio9tab@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio9.jpg    1x,
+                        ./images/portfolio9@2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img src="./images/portfolio9.jpg" alt="Образец сайта" />
+                  </picture>
                   <p class="portfolio-popup-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить

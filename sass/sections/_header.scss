@@ -76,6 +76,8 @@ align-items: center;
     overflow:auto;
     padding-top: 48px;
     padding-bottom: 48px;
+    transition: opacity $typical-timing-duration $typical-timing-function,
+    visibility $typical-timing-duration $typical-timing-function;
     .container {
         display: flex;
         height: 100%;
@@ -120,8 +122,12 @@ align-items: center;
         &:hover, &:focus {
             color: $accent-color;
         }
+        
 }
 
+.current {
+    color: $accent-color;
+}
 
 .mob-contacts {
     margin-bottom: 64px;

@@ -131,7 +131,7 @@ img {
   cursor: pointer;
   border-radius: 4px;
   border: transparent;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-navigation-item .button:hover, .portfolio-navigation-item .button:focus {
   color: #ffffff;
@@ -148,7 +148,7 @@ img {
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .portfolio-list-item:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -309,6 +309,7 @@ img {
   overflow: auto;
   padding-top: 48px;
   padding-bottom: 48px;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .mob-menu {
@@ -354,6 +355,10 @@ img {
   color: #212121;
 }
 .mob-navigation__link:hover, .mob-navigation__link:focus {
+  color: #2196f3;
+}
+
+.current {
   color: #2196f3;
 }
 

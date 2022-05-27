@@ -58,7 +58,7 @@
     border: transparent;
     transition: color $typical-timing-duration $typical-timing-function,
         background-color $typical-timing-duration $typical-timing-function,
-        box-shadow $typical-timing-duration, $typical-timing-function;
+        box-shadow $typical-timing-duration $typical-timing-function;
 
 &:hover,
 &:focus {
@@ -82,7 +82,7 @@
 
 
 .portfolio-list-item:not(:last-child){
-    @media screen and (max-width:1199px){
+    @media screen and (max-width:767px){
         margin-bottom: 30px;
     }
     

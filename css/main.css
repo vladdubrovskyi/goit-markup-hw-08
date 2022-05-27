@@ -168,6 +168,7 @@ img {
   overflow: auto;
   padding-top: 48px;
   padding-bottom: 48px;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .mob-menu {
@@ -213,6 +214,10 @@ img {
   color: #212121;
 }
 .mob-navigation__link:hover, .mob-navigation__link:focus {
+  color: #2196f3;
+}
+
+.current {
   color: #2196f3;
 }
 
